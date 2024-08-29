@@ -7,6 +7,7 @@ import Navbar from './components/navbar/Navbar';
 import Welcome_page from './components/welcome_page/Welcome_page';
 import Signup from './components/sign-up/Signup';
 import Footer from './components/footer/Footer';
+const PORT = process.env.PORT || 6010
 
 function App() {
   const [count, setCount] = useState(0);
