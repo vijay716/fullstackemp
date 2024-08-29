@@ -1,0 +1,141 @@
+/* Container for the signup form */
+.signup-form-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-bottom: 10px;
+  padding: 20px; /* Add padding for better spacing on smaller screens */
+}
+
+/* Main form styling */
+.signup-form {
+  width: 100%; /* Full width initially */
+  max-width: 600px; /* Maximum width for larger screens */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Smooth transition for layout changes */
+}
+
+/* Form controls styling */
+.form-control {
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+/* Submit button styling */
+.btn-submit {
+  background-color: #007bff;
+  color: white;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+/* File upload and download container */
+.file-upload-download-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Wrap items on smaller screens */
+  gap: 15px; /* Space between flex items */
+}
+
+.file-upload {
+  flex: 1; /* Allow the upload section to take up available space */
+  margin-right: 20px;
+}
+
+.download-section {
+  flex-shrink: 0;
+}
+
+.download-link {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download-link:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Media Queries */
+
+/* Small screens (up to 576px) */
+@media screen and (max-width: 576px) {
+  .signup-form {
+    max-width: 100%; /* Full width for smaller screens */
+    padding: 15px; /* Reduce padding */
+    
+  }
+  .signup-form-container{
+    margin-top: 7px;
+  }
+
+  .form-control {
+    margin-bottom: 10px; /* Reduce margin between form controls */
+  }
+
+  .btn-submit {
+    padding: 8px; /* Reduce padding for buttons */
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  .flex-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: stretch; /* Align items to stretch full width */
+    gap: 10px; /* Reduce gap for smaller screens */
+  }
+}
+
+/* Medium screens (576px to 768px) */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .signup-form {
+    max-width: 80%; /* Slightly wider form */
+  }
+
+  .btn-submit {
+    font-size: 1.1rem; /* Adjust font size */
+  }
+}
+
+/* Large screens (769px to 959px) */
+@media screen and (min-width: 769px) and (max-width: 959px) {
+  .signup-form {
+    max-width: 75%; /* Reduce form width */
+  }
+
+  .flex-container {
+    gap: 20px; /* Increase gap for larger screens */
+  }
+}
+
+/* Extra-large screens (960px and above) */
+@media screen and (min-width: 960px) {
+  .signup-form {
+    max-width: 60%; /* Reduce form width for extra-large screens */
+  }
+
+  .btn-submit {
+    font-size: 1.2rem; /* Increase font size */
+  }
+}

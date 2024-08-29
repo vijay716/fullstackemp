@@ -1,0 +1,146 @@
+/* General Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:white ; 
+  padding: 10px 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Ensure the logo and profile image are positioned correctly */
+.navbar-brand {
+  font-size: 1.5rem; 
+  color: black; 
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center; /* Center-align items vertically */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  list-style: none; /* Remove default list styling */
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem; 
+  color: black; 
+  margin: 0 10px; /* Add spacing between links */
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #00b796; 
+}
+
+/* Profile Logo Styling */
+.profile-logo {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Pushes the profile logo to the right */
+}
+
+.profile-user {
+  width: 40px; 
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For screens up to 768px (small screens) */
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center-align text */
+    width: 100%; /* Ensure full width for stacked items */
+  }
+  
+  .profile-logo {
+    margin: 10px 0; /* Add vertical margin for spacing */
+    padding-right: 20px; /* Ensure profile logo stays aligned */
+  }
+  
+  .navbar-toggler {
+    margin-left: auto; /* Align toggler button to the right */
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+  
+  .profile-user {
+    width: 30px; /* Adjust profile logo size for smaller screens */
+    height: 30px;
+  }
+}
+
+/* For screens from 769px to 959px (medium screens) */
+@media screen and (min-width: 769px) and (max-width: 959px) {
+  .navbar-nav {
+    flex-direction: row; /* Horizontal layout */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .profile-logo {
+    margin-left: auto; /* Space from other items */
+    padding-right: 20px; /* Ensure profile logo stays aligned */
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.1rem; /* Standard font size */
+  }
+  
+  .profile-user {
+    width: 35px; /* Adjust profile logo size */
+    height: 35px;
+  }
+}
+
+/* For screens from 960px to 1239px (large screens) */
+@media screen and (min-width: 960px) and (max-width: 1239px) {
+  .navbar-nav {
+    flex-direction: row; /* Horizontal layout */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .profile-logo {
+    margin-left: auto; /* Space from other items */
+    padding-right: 20px; /* Ensure profile logo stays aligned */
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.2rem; /* Slightly larger font size */
+  }
+  
+  .profile-user {
+    width: 40px; /* Standard profile logo size */
+    height: 40px;
+  }
+}
+
+/* For screens 1240px and larger (extra-large screens) */
+@media screen and (min-width: 1240px) {
+  .navbar-nav {
+    flex-direction: row; /* Horizontal layout */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .profile-logo {
+    margin-left: auto; /* Space from other items */
+    padding-right: 20px; /* Ensure profile logo stays aligned */
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.3rem; /* Larger font size for large screens */
+  }
+  
+  .profile-user {
+    width: 40px; /* Standard profile logo size */
+    height: 40px;
+  }
+}
